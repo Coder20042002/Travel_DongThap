@@ -14,7 +14,7 @@ html {
 }
 
 #header {
-    background-color: #000;
+    background-image:linear-gradient(to right, RGBA( 127, 255, 0, 1 ),   RGBA( 100, 149, 237, 1 ));
     height: 46px;
     position: fixed;
     top :0;
