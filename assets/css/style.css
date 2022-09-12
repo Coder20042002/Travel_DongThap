@@ -2,8 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
+.text-white{
+    color: #fff !important;
+}
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -161,6 +165,66 @@ font-size: 14px;
     font-size: 15px;
     text-align: justify;
     line-height: 1.6;
+}
+
+.members-list{
+    text-align: center;
+    margin-top: 48px;
+    overflow: hidden;
+    
+}
+
+#content .members-item {
+    width: 33.333%;
+    float: left;
+}
+
+.members-list .members-item img{
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 4px;
+    
+}
+
+.tour-section{
+    background-image:linear-gradient(to right, RGBA( 127, 255, 0, 1 ),   RGBA( 100, 149, 237, 1 ));
+}
+
+
+.tour-list{
+    list-style-type: none;
+    margin-top: 48px;
+
+}
+
+.tour-list li{
+    font-size: 15px;
+    padding: 4px 24px;
+    border-bottom: 1px solid #dddd;
+    border-radius: 4px;
+    color: #000;
+    background-color: #fff;
+    font-size: 21px;
+
+}
+
+.tour-list .sold-out{
+background-color: #f44336;
+border-radius: 4px;
+margin-left: 30px;
+color: #fff;
+}
+
+.tour-list .quantity{
+float: right;
+font-size: 15px;
+border-radius:50%;
+background-color: #f44336;
+color: #fff;
+text-align: center;
+width: 20px;
+line-height: 15px;
+margin-top: 5px;
 }
 
 #footer {}
