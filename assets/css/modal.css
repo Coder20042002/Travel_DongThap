@@ -12,8 +12,8 @@
 
 }
 
-.modal .open{
-
+ .open{
+    display: flex;
 }
 
 .modal-container {
@@ -23,6 +23,8 @@
     min-height: 200px;
     position: relative;
     min-width: calc(100%-32px);
+    animation: modalFadeIn ease .5s;
+    
 }
 
 
@@ -99,4 +101,13 @@
 .modal-help a{
     color: #2196f3;
 }
-.modal-help {}
+
+@keyframes modalFadeIn {
+    from{
+        transform: translateY(-140px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}

@@ -297,6 +297,7 @@ html {
 .place-btn:hover {
     background-color: #cccc;
     color: #000;
+    cursor: pointer;
 }
 
 #footer {}
