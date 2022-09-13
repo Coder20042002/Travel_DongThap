@@ -4,13 +4,17 @@
 <head>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     <meta charset="UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 
 <body>
+    
     <div id="main">
         <div id="header">
             <!--Star nav-->
@@ -76,7 +80,7 @@
                         <img src="/assets/img/tram-cim.jpg" alt="">
                     </div>
                     <div class="members-item">
-                        <p>Làng Hoa</p>
+                        <p>Làng Hoa Sa Đéc</p>
                         <img src="/assets/img/lang-hoa-sa-dec-2020-dong-thap-2.jpg" alt="">
                     </div>
 
@@ -92,7 +96,36 @@
                         <li>October  <span class="sold-out">Sold out</span></li>
                         <li>November  <span class="quantity">9</span></li>
                     </ul>
-    
+
+                    <div class="place-list">
+                        <div class="place-item">
+                            <img src="./assets/img/Tuhaodongthapdatsenh-01.jpg" alt="Thap Muoi" class="place-img">
+                            <div class="place-text">
+                                <h3 class="place-heading">Tháp Mười</h3>
+                                <p class="place-time">Fri 27 Now 2016</p>
+                                <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="place-item">
+                            <img src="./assets/img/tram-cim.jpg" alt="Thap Muoi" class="place-img">
+                            <div class="place-text">
+                                <h3 class="place-heading">Tràm Chim</h3>
+                                <p class="place-time">Sat 28 Nov 2016</p>
+                                <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="place-item">
+                            <img src="./assets/img/lang-hoa-sa-dec-2020-dong-thap-2.jpg" alt="Thap Muoi" class="place-img">
+                            <div class="place-text">
+                                <h3 class="place-heading">Làng Hoa Sa Đéc</h3>
+                                <p class="place-time">Sun 29 Nov 2016</p>
+                                <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-btn js-buy-ticket" >Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="content-section">
@@ -106,6 +139,48 @@
 
         </div>
     </div>
+   
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-close">
+                <i class="ti-close"></i>
+            </div>
+    
+            <header class="modal-header">
+                <i class="ti-bag icon-bag">Tickest</i>
+            </header>
+    
+            <div class="modal-body">
+                <label for="ticket-quantity" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tikets, $15 per person
+                </label>
+                <input  id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
+    
+                <label for="tiket-email" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send to
+                </label>
+                <input id="tiket-email" type="email" class="modal-input" placeholder="Enter email...">
+
+                <button id="btn-tikets">
+                    Pay
+                    <i class="ti-check"></i>
+
+                </button>
+            </div>
+
+            <div class="modal-footer">
+                <p class="modal-help">
+                    Need <a href="#">help?</a>
+                </p>
+            </div>
+        </div>
+
+        
+    </div>
+
+
 </body>
 
 </html>
