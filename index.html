@@ -75,15 +75,15 @@
                     Coming to Dong Thap, visitors not only have the opportunity to admire the beauty of the gentle canals, the vast rice fields and the fragrant lotus lake, but also enjoy countless delicious dishes of the western region. country. The Dong Thap region is an ideal place for those who want to escape the hustle and bustle of the city and enjoy the peaceful scenery with rustic rural life.
                 </p>
                 <div class="row members-list">
-                    <div class="members-item col col-third ">
+                    <div class="members-item col col-third tetx-center">
                         <p>Thap Muoi</p>
                         <img src="/assets/img/Tuhaodongthapdatsenh-01.jpg" alt="">
                     </div>
-                    <div class="members-item col col-third ">
+                    <div class="members-item col col-third tetx-center">
                         <p>Tram Chim</p>
                         <img src="/assets/img/tram-cim.jpg" alt="">
                     </div>
-                    <div class="members-item col col-third ">
+                    <div class="members-item col col-third tetx-center">
                         <p>Sa Dec Flower Village</p>
                         <img src="/assets/img/lang-hoa-sa-dec-2020-dong-thap-2.jpg" alt="">
                     </div>
@@ -102,7 +102,7 @@
                     </ul>
 
                     <div class="row place-list">
-                        <div class="col-third col">
+                        <div class="col-third col s-col-full mt-16">
                             <img src="./assets/img/Tuhaodongthapdatsenh-01.jpg" alt="Thap Muoi" class="place-img">
                             <div class="place-text">
                                 <h3 class="place-heading">Thap Muoi</h3>
@@ -111,7 +111,7 @@
                                 <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="col-third col">
+                        <div class="col-third col s-col-full mt-16">
                             <img src="./assets/img/tram-cim.jpg" alt="Thap Muoi" class="place-img">
                             <div class="place-text">
                                 <h3 class="place-heading">Tram Chim</h3>
@@ -120,7 +120,7 @@
                                 <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="col-third col">
+                        <div class="col-third col s-col-full mt-16">
                             <img src="./assets/img/lang-hoa-sa-dec-2020-dong-thap-2.jpg" alt="Thap Muoi"
                                 class="place-img">
                             <div class="place-text">
@@ -263,7 +263,7 @@
             if(isClose) {
                 header.style.height='auto';
             } else {
-                header.style.height='46px';
+                header.style.height=null;
             }
         }
 
@@ -273,9 +273,13 @@
         for(var i =0 ;i<menuItems.length ;i++) {
             var menuItem=menuItems[i];
 
-            menuItem.onclick=function() {
-                console.log(this)
-                header.style.height='46px';
+            menuItem.onclick=function(event) {
+                var isParentMenu=this.nextElementSibling && this.nextElementSibling.classList('subnav')
+                if(isParentMenu) {
+                    event.preventDefault();
+                } else {
+                    header.style.height=null;
+                }
             }
         }
     </script>

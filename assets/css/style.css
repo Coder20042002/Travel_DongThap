@@ -62,7 +62,7 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
-    overflow: hidden;
+
 
 }
 
@@ -129,6 +129,12 @@ html {
     font-size: 14px;
 }
 
+#header .mobile-menu-btn {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
 #header .mobile-menu-btn,
 #header .search-btn {
@@ -228,7 +234,7 @@ html {
 
 .members-list {
     
-    margin-top: 48px;
+    margin-top: 32px;
     overflow: hidden;
 
 }
@@ -292,7 +298,7 @@ html {
 
 
 .place-list {
-    margin-top: 32px;
+    margin-top: 16px;
     overflow: hidden;
     
 }
