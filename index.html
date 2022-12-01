@@ -2,514 +2,287 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="icon" href="data:image/jpeg;base64,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" type="image/x-icon"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-    <link rel="stylesheet" href="assets/css/style/container.css">
-    <link rel="stylesheet" href="assets/css/style/base.css">
-    <link rel="stylesheet" href="assets/css/style/header.css">
-    <link rel="stylesheet" href="assets/css/style/footer.css">
-    <link rel="stylesheet" href="assets/css/style/reponsive.css">
-    <script src="https://kit.fontawesome.com/4cce40d546.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <title>Zara</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dong Thap</title>
 </head>
 
 <body>
-    <div class="main">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 header__with--search">
 
-                    <div class="header__search">
+    <div id="main">
+        <div id="header">
+            <!--Star nav-->
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#dongthap">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#">
+                        More
+                        <i class="nav-arrow-down ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
 
-                        <input type="text" class="header__search--input" placeholder="Nhập sản phẩm cần tìm...">
-                        <button class="header__search-btn">
-                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
-                        </button>
 
-                    </div>
 
-                    <div class="header-cart">
+            </ul>
+            <!--End nav-->
 
+            <!--Star search-->
+            <div class="search-btn">
+                <i class="search-icon ti-search"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="ti-menu menu-icon"></i>
+            </div>
+            <!--End search-->
+        </div>
+        <div id="slider">
+            <div class=" content-section tetx-content">
+                <div class="row">
+                    <h2 class="text-heading">
+                        Dong Thap
+                    </h2>
+                    <div class="text-description">
+                        <p>As one of 13 provinces in the Cuu Long River Delta <br>
+                            Focus on food and fruit transplanting in the region and across the country    
+                        </p>
                     </div>
                 </div>
-                <div class="col-12 header">
-                    <nav class="header-navbar">
+               
+            </div>
 
-                        <div class=" col-1 header_navbar--logo">
-                            <img src="assets/css/img/polygonal-letter-z-of-small-triangles copy.png " alt="">
+        </div>
+        <div id="content">
+            
+            <div id="dongthap" class="content-section">
+                <h2 class="section-heading">Dong Thap</h2>
+                <p class="section-sub-heading">Pink lotus land</p>
+                <p class="about-text">
+                    Coming to Dong Thap, visitors not only have the opportunity to admire the beauty of the gentle canals, the vast rice fields and the fragrant lotus lake, but also enjoy countless delicious dishes of the western region. country. The Dong Thap region is an ideal place for those who want to escape the hustle and bustle of the city and enjoy the peaceful scenery with rustic rural life.
+                </p>
+                <div class="row members-list">
+                    <div class="members-item col col-third tetx-center">
+                        <p>Thap Muoi</p>
+                        <img src="/assets/img/Tuhaodongthapdatsenh-01.jpg" alt="">
+                    </div>
+                    <div class="members-item col col-third tetx-center">
+                        <p>Tram Chim</p>
+                        <img src="/assets/img/tram-cim.jpg" alt="">
+                    </div>
+                    <div class="members-item col col-third tetx-center">
+                        <p>Sa Dec Flower Village</p>
+                        <img src="/assets/img/lang-hoa-sa-dec-2020-dong-thap-2.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="tour" class="tour-section">
+                <div class="content-section">
+                    <h2 class="section-heading text-white">TOUR VISIT DATE</h2>
+                    <p class="section-sub-heading text-white">Upper ceramic tube</p>
+                    <ul class="tour-list">
+                        <li>September <span class="sold-out">Sold out</span></li>
+                        <li>October <span class="sold-out">Sold out</span></li>
+                        <li>November <span class="quantity">9</span></li>
+                    </ul>
+
+                    <div class="row place-list">
+                        <div class="col-third col s-col-full mt-16">
+                            <img src="./assets/img/Tuhaodongthapdatsenh-01.jpg" alt="Thap Muoi" class="place-img">
+                            <div class="place-text">
+                                <h3 class="place-heading">Thap Muoi</h3>
+                                <p class="place-time">Fri 27 Now 2016</p>
+                                <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                            </div>
                         </div>
-
-
-                        <div class="col-9 header_navbar--main">
-
-                            <ul class="header_navbar--main-list">
-
-                                <li class="header_navbar--main-list-item ">
-                                    <a href="#"
-                                        class="header_navbar--main-list-item-link header_navbar--main-list-item--separate">
-                                        SẢN PHẨM
-                                        <i class="fa-solid fa-angle-down"></i>
-                                    </a>
-                                    <ul class="subnav">
-                                        <li><a href="#">Áo thun</a></li>
-                                        <li><a href="#">Áo khoác</a></li>
-                                        <li><a href="#">Quần dài</a></li>
-                                        <li><a href="#">Quần sọt</a></li>
-                                    </ul>
-
-                                </li>
-                                <li class="header_navbar--main-list-item ">
-                                    <a href="#"
-                                        class="header_navbar--main-list-item-link header_navbar--main-list-item--separate">
-                                        ABOUT
-                                    </a>
-
-                                </li>
-                                <li class="header_navbar--main-list-item">
-                                    <a href="#"
-                                        class="header_navbar--main-list-item-link header_navbar--main-list-item--separate">SALE</a>
-                                </li>
-                                <li class="header_navbar--main-list-item">
-                                    <a href="#" class="header_navbar--main-list-item-link ">DISCOVER YOU</a>
-                                </li>
-
-                            </ul>
-
-
+                        <div class="col-third col s-col-full mt-16">
+                            <img src="./assets/img/tram-cim.jpg" alt="Thap Muoi" class="place-img">
+                            <div class="place-text">
+                                <h3 class="place-heading">Tram Chim</h3>
+                                <p class="place-time">Sat 28 Nov 2016</p>
+                                <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                            </div>
                         </div>
-
-                        <ul class="col-2 header_navbar-icon">
-
-                            <li class="header_navbar-icon--gr header_navbar-item--has-message">
-                                <a href="#" class="header_navbar-icon-link">
-                                    <i class="fa-solid fa-bell"></i>
-                                </a>
-                                <div class="header_message">
-                                    <header class="header_message-header">
-                                        <h3>Thông báo mới nhận</h3>
-                                    </header>
-                                    <ul class="header_message_list">
-                                        <li class="header_message-item header_message-item--view">
-
-                                            <a href="#" class="header_mesage-link">
-
-                                                <img src="assets/css/img/Banner_sale_2.09_(02).jpg" alt=""
-                                                    class="header_message-img">
-                                                <div class="header_message-info">
-                                                    <span class="header_message-name">Flash Sale 2/9 lễ hội tưng
-                                                        bừng</span>
-                                                    <span class="header_message-descr">Ưu đãi nhiều khuyến mãi</span>
-                                                </div>
-
-                                            </a>
-                                        </li>
-                                        <li class="header_message-item header_message-item--view">
-
-                                            <a href="#" class="header_mesage-link">
-
-                                                <img src="assets/css/img/h1a.jpg" alt="" class="header_message-img">
-                                                <div class="header_message-info">
-                                                    <span class="header_message-name">Hàng mới polo horus 100%
-                                                        cottom</span>
-                                                    <span class="header_message-descr">Cam kết chất lượng</span>
-                                                </div>
-
-                                            </a>
-                                        </li>
-                                        <li class="header_message-item header_message-item--view">
-
-                                            <a href="#" class="header_mesage-link">
-
-                                                <img src="assets/css/img/h3a.jpg" alt="" class="header_message-img">
-                                                <div class="header_message-info">
-                                                    <span class="header_message-name">Áo thun polo Zara chính
-                                                        hảng</span>
-                                                    <span class="header_message-descr">Cam kết chất lượng</span>
-                                                </div>
-
-                                            </a>
-                                        </li>
-
-                                    </ul>
-                                    <footer class="header_message-footer">
-                                        <a href="#" class="footer-content">Xem tất cả</a>
-                                    </footer>
+                        <div class="col-third col s-col-full mt-16">
+                            <img src="./assets/img/lang-hoa-sa-dec-2020-dong-thap-2.jpg" alt="Thap Muoi"
+                                class="place-img">
+                            <div class="place-text">
+                                <h3 class="place-heading">Sa Dec Flower Village</h3>
+                                <p class="place-time">Sun 29 Nov 2016</p>
+                                <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Begin : contact-section-->
+            <div id="contact" class="content-section">
+                <h2 class="section-heading">CONTACT</h2>
+                <p class="section-sub-heading">Fan? Drop a note!</p>
+                <div  class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"></i>DongThap, VN</p>
+                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+                        <p><i class="ti-email"></i> Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row mt-8">
+                                <div class="col col-half">
+                                    <input type="text" name="" id="" class="form-control" required placeholder="Name">
                                 </div>
-                            </li>
-                            <li class="header_navbar-icon--gr">
-                                <a href="#" class="header_navbar-icon-link">
-                                    <i class="fa-solid fa-user"></i>
-                                </a>
-                            </li>
-                            <li class="header_navbar-icon--gr">
-                                <a href="#" class="header_navbar-icon-link">
-                                    <i class="fa-brands fa-shopify"></i>
-                                </a>
-                            </li>
-
-
-
-
-                        </ul>
-
-
-
-
-                    </nav>
+                                <div class="col col-half">
+                                    <input type="email" name="" id="" class="form-control" required placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" id="" class="form-control" required placeholder="Message">
+                                </div>
+                            </div>
+                            <input class=" btn pull-right mt-16 " type="submit" value="Send">
+                        </form>
+                    </div>
                 </div>
-
-
             </div>
+            <!--End : contact-section-->
 
-
+            <div class="map-section">
+                <img src="/assets/img/anh-1-4.jpg" alt="">
+            </div>
         </div>
-    </div>
 
-
-    <div class="container ">
-        <div class="part">
-            <div class="row">
-                <div class="col-sm-12 ">
-                    <div class="text-center">
-                        <p class="mb-1">Sản Phẩm Mới</p>
-                        <p>Đừng bỏ lỡ các chương trình khuyến mãi Hot tại Yame.vn</p>
-                    </div>
-
-
-                </div>
-            </div>
-
-            <div class="imgbuilt">
-                <a href="#">
-                    <img class="img-fluid" src="assets/css/img/BANNER-AK-CHU.jpg" alt="">
-                </a>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <p class="mb-1">Các chương trình Khuyến mãi</p>
-                    <p>Đừng bỏ lỡ các chương trình khuyến mãi Hot tại Yame.vn</p>
-
-                </div>
-            </div>
-            <div class="row">
-
-                <div class="col-12 col-md-6 px-1">
-                    <h4 class="fw-normal"><a href="#">SALE 2/9</a></h4>
-                    <div class="banner-home3-colection-top" style="margin-bottom:10px;">
-                        <a href="/bai-viet/sale-29/78e8d3b4-9950-439c-8834-9f0cafc83480">
-                            <img class="img-fluid" src="assets/css/img/Thum_sale_2.9_(02).jpg" alt="SALE 2/9">
-                        </a>
-                    </div>
-                    <div class="row">
-
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 px-1">
-                    <h4 class="fw-normal"><a href="#">YaMe.vn - GIỚI THIỆU</a></h4>
-                    <div class="banner-home3-colection-top" style="margin-bottom:10px;">
-                        <a href="#">
-                            <img class="img-fluid" src="assets/css/img/Thumb_NCG.jpg" alt="YaMe.vn - GIỚI THIỆU">
-                        </a>
-                    </div>
-                    <div class="row">
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row ">
-                <div class="col-6 col-md-3 mb-2  px-0">
-                    <a href="#">
-                        <img class="img-fluid" src="assets/css/img/6-BLUE.jpg" alt="BLUE COLLECTION">
-                    </a>
-                </div>
-                <div class="col-6 col-md-3 mb-2  px-0">
-                    <a href="#">
-                        <img class="img-fluid" src="assets/css/img/5-BLACK.jpg" alt="BLACK COLLECTION">
-                    </a>
-                </div>
-                <div class="col-6 col-md-3 mb-2  px-0">
-                    <a href="#">
-                        <img class="img-fluid" src="assets/css/img/1-WHITE.jpg" alt="WHITE COLLECTION">
-                    </a>
-                </div>
-                <div class="col-6 col-md-3 mb-2  px-0">
-                    <a href="#">
-                        <img class="img-fluid" src="assets/css/img/8-GREY.jpg" alt="GREY COLLECTION">
-                    </a>
-                </div>
-                <div class="col-6 col-md-3 mb-2  px-0">
-                    <a href="#">
-                        <img class="img-fluid" src="assets/css/img/4-GREEN.jpg" alt="GRENN COLLECTION">
-                    </a>
-                </div>
-                <div class="col-6 col-md-3 mb-2  px-0">
-                    <a href="#">
-                        <img class="img-fluid" src="assets/css/img/2-RED.jpg" alt="RED COLLECTION">
-                    </a>
-                </div>
-                <div class="col-6 col-md-3 mb-2  px-0">
-                    <a href="#">
-                        <img class="img-fluid" src="assets/css/img/3-PINK.jpg " alt="PINK COLLECTION">
-                    </a>
-                </div>
-                <div class="col-6 col-md-3 mb-2  px-0">
-                    <a href="#">
-                        <img class="img-fluid" src="assets/css/img/7-BEIGE.jpg" alt="BEIGE COLLECTION">
-                    </a>
-                </div>
-
-
-            </div>
-
-
-
-            <div class="col-sm-12 text-center">
-                <p class="mb-1">Top sản phẩm HOT</p>
-                <p>Những sản phẩm thời trang mới nhất/Hot nhất</p>
-            </div>
-            <div class="row">
-                <!--Begin card-l-->
-                <div class="col-6 col-sm-3 col-md-3 ">
-                    <div class="card-list">
-                        <div class="card">
-                            <img src="assets/css/img/h1a.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Áo thun cotton </h5>
-                                <p>Giá bán :
-                                    <span class="card-price"> 250,000đ</span>
-                                </p>
-                                <a href="#" class="btn btn-primary">Thông tin sản phẩm</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-6 col-sm-3 col-md-3 ">
-                    <div class="card-list">
-                        <div class="card">
-                            <img src="assets/css/img/h2a.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Áo thun cotton </h5>
-                                <p>Giá bán :
-                                    <span class="card-price"> 250,000đ</span>
-                                </p>
-                                <a href="#" class="btn btn-primary">Thông tin sản phẩm</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-6 col-sm-3 col-md-3 ">
-                    <div class="card-list">
-                        <div class="card">
-                            <img src="assets/css/img/h3a.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Áo thun cotton </h5>
-                                <p>Giá bán :
-                                    <span class="card-price"> 250,000đ</span>
-                                </p>
-                                <a href="#" class="btn btn-primary">Thông tin sản phẩm</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-6 col-sm-3 col-md-3 ">
-                    <div class="card-list">
-                        <div class="card">
-                            <img src="assets/css/img/h4a.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Áo thun cotton </h5>
-                                <p>Giá bán :
-                                    <span class="card-price"> 250,000đ</span>
-                                </p>
-                                <a href="#" class="btn btn-primary">Thông tin sản phẩm</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row">
+        <div id="footer">
+            <div class="socials-list">
+                <a href="" ><i class="ti-facebook"></i></a>
+                <a href="" ><i class="ti-instagram"></i></a>
+                <a href="" ><i class="ti-youtube"></i></a>
+                <a href="" ><i class="ti-pinterest"></i></a>
+                <a href="" ><i class="ti-twitter"></i></a>
+                <a href="" ><i class="ti-linkedin"></i></a>
                 
-                <div class="col-6 col-sm-3 col-md-3 ">
-                    <div class="card-list">
-                        <div class="card">
-                            <img src="assets/css/img/h1c.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Áo thun cotton </h5>
-                                <p>Giá bán :
-                                    <span class="card-price"> 250,000đ</span>
-                                </p>
-                                <a href="#" class="btn btn-primary">Thông tin sản phẩm</a>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <p class="copyright">Dong Thap <a href="">travel </a> </p>
+        </div>
+        
+    </div>
 
-                </div>
-                <div class="col-6 col-sm-3 col-md-3 ">
-                    <div class="card-list">
-                        <div class="card">
-                            <img src="assets/css/img/h2c.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Áo thun cotton </h5>
-                                <p>Giá bán :
-                                    <span class="card-price"> 250,000đ</span>
-                                </p>
-                                <a href="#" class="btn btn-primary">Thông tin sản phẩm</a>
-                            </div>
-                        </div>
-                    </div>
+    <div class="modal js-open-modal ">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-close-modal">
+                <i class="ti-close"></i>
+            </div>
 
-                </div>
-                <div class="col-6 col-sm-3 col-md-3 ">
-                    <div class="card-list">
-                        <div class="card">
-                            <img src="assets/css/img/h3c.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Áo thun cotton </h5>
-                                <p>Giá bán :
-                                    <span class="card-price"> 250,000đ</span>
-                                </p>
-                                <a href="#" class="btn btn-primary">Thông tin sản phẩm</a>
-                            </div>
-                        </div>
-                    </div>
+            <header class="modal-header">
+                <i class="ti-bag icon-bag">Tickest</i>
+            </header>
 
-                </div>
-                <div class="col-6 col-sm-3 col-md-3 ">
-                    <div class="card-list">
-                        <div class="card">
-                            <img src="assets/css/img/h4c.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Áo thun cotton </h5>
-                                <p>Giá bán :
-                                    <span class="card-price"> 250,000đ</span>
-                                </p>
-                                <a href="#" class="btn btn-primary">Thông tin sản phẩm</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="modal-body">
+                <label for="ticket-quantity" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tikets, $15 per person
+                </label>
+                <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
 
-                </div>
+                <label for="tiket-email" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send to
+                </label>
+                <input id="tiket-email" type="email" class="modal-input" placeholder="Enter email...">
+
+                <button id="btn-tikets">
+                    Pay
+                    <i class="ti-check"></i>
+
+                </button>
+            </div>
+
+            <div class="modal-footer">
+                <p class="modal-help">
+                    Need <a href="#">help?</a>
+                </p>
             </div>
         </div>
 
 
-
     </div>
+    <script>
+        const buyBtns = document.querySelectorAll(".js-buy-ticket");
+        const modal = document.querySelector('.js-open-modal')
+        const modalClose = document.querySelector('.js-close-modal')
+        const modalContainer = document.querySelector('.js-modal-container')
+        //ham hiển thị modal(thêm class open vào modal)
+        function showBuyTickets() {
+            modal.classList.add('open')
+        }
+        //hàm remoe modal(gỡ bỏ class open của modal)
+        function hideBuyTickets() {
+            modal.classList.remove('open')
+        }
+        //lặp qua từng the button
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuyTickets)
+        }
 
-    <div class="footer">
-        <div class="grid">
-            <div class="row">
-                <div class=".grid_column-2-4 col-2.4 ">
-                    <h3 class="footer-heaidng">Chăm sóc khách hàng</h3>
-                    <ul class="footer_list">
-                        <li class="footer-item">
-                            <a href="#" class="footer-iten-link">Phản hồi</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" class="footer-iten-link">Đánh giá</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" class="footer-iten-link">Hướng dẫn mua hàng</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="gird-column-2-4 col-2.4">
-                    <h3 class="footer-heaidng">Giới thiệu </h3>
-                    <ul class="footer_list">
-                        <li class="footer-item">
-                            <a href="#" class="footer-iten-link">Giới thiệu</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" class="footer-iten-link">Tuyển dụng</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" class="footer-iten-link">Điều khoản</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="gird-column-2-4 col-2.4">
-                    <h3 class="footer-heaidng">Chi nhánh</h3>
-                    <ul class="footer_list">
-                        <li class="footer-item">
-                            YaMe Q.10: 770F, Sư Vạn Hạnh
-                        </li>
-                        <li class="footer-item">
-                            YaMe Q.5: 190, Nguyễn Trãi
-                        </li>
-                        <li class="footer-item">
-                            YaMe Q.7: 323 Huỳnh Tấn Phát
-                        </li>
-                    </ul>
-                </div>
-                <div class="gird-column-2-4 col-2.4">
-                    <h3 class="footer-heaidng">Theo dõi</h3>
-                    <ul class="footer_list">
-                        <li class="footer-item">
-                            <a href="#" class="footer-iten-link">Facebook
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" class="footer-iten-link">Instargam
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" class="footer-iten-link">Twitter
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                        </li>
-                        </li>
-                    </ul>
-                </div>
-                <div class="gird-column-2-4 col-2.4">
-                    <h3 class="footer-heaidng">Vào cữa hàng trên ứng dụng</h3>
-                    <div class="footer_download">
-                        <img src="assets/css/img/qrcode_30085226_.png" class="footer-qc_code" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-10  col-12  mcenter">
-                    <hr style="margin: 10px 0;">
-                    <p>© 2022 - CÔNG TY TNHH EM VI ANH VN</p>
-                    <p>Giấy CNĐKDN: 0310874914 – Ngày cấp: 25/11/2011 - Cơ quan cấp: Phòng Đăng Ký Kinh Doanh – Sở Kế
-                        Hoạch và Đầu Tư TP.HCM</p>
-                    <p>Địa chỉ đăng ký kinh doanh: 766/3B-3C Sư Vạn Hạnh (Nối dài), Phường 12, Quận 10, TP.HCM - Điện
-                        thoại: (028) 3868 4857 - Mua hàng: (028) 7307 1441 - Email: cskh@yame.vn</p>
-                </div>
-                <div class="col-md-2 col-12 mcenter">
+        //nghe hành vi của close
+        modalClose.addEventListener('click', hideBuyTickets)
 
-                    <img src="assets/css/img/dathongbao.png" alt=""
-                        style="width: 100%; max-width:150px; margin-top:10px;">
+        modal.addEventListener('click', hideBuyTickets)
 
-                </div>
-            </div>
-        </div>
-    </div>
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+    </script>
 
+    <script>
+        var header=document.getElementById('header');
+        var mobileMenu=document.getElementById('mobile-menu');
+        var headerHeight=header.clientHeight;
 
+        /*Đóng/Mở mobile*/
+        mobileMenu.onclick=function() {
+            var isClose=header.clientHeight===headerHeight;
+            if(isClose) {
+                header.style.height='auto';
+            } else {
+                header.style.height=null;
+            }
+        }
 
+        //Tự đóng khi mở menu
+        var menuItems=document.querySelectorAll('#nav li a[href*="#"]');
+        
+        for(var i =0 ;i<menuItems.length ;i++) {
+            var menuItem=menuItems[i];
+
+            menuItem.onclick=function(event) {
+                var isParentMenu=this.nextElementSibling && this.nextElementSibling.classList('subnav')
+                if(isParentMenu) {
+                    event.preventDefault();
+                } else {
+                    header.style.height=null;
+                }
+            }
+        }
+    </script>
 
 </body>
 
